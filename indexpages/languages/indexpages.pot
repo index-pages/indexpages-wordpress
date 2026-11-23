@@ -1,0 +1,943 @@
+# Copyright (C) 2026 Index Pages
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Index Pages URL Indexing 0.1.0\n"
+"Report-Msgid-Bugs-To: support@index-pages.com\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-18T23:21:19+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: indexpages\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: indexpages.php
+#: includes/class-indexpages-admin.php:326
+#: includes/class-indexpages-posts-list.php:76
+#: includes/class-indexpages-settings-page.php:35
+#: includes/class-indexpages-settings-page.php:36
+#: includes/class-indexpages-settings-page.php:67
+#: includes/class-indexpages-tools-page.php:37
+#: includes/class-indexpages-tools-page.php:38
+#: includes/class-indexpages-tools-page.php:71
+msgid "Index Pages"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: indexpages.php
+msgid "https://index-pages.com/"
+msgstr ""
+
+#. Description of the plugin
+#: indexpages.php
+msgid "Sends the URLs of your published posts and pages to Index Pages, a paid URL indexing service, and shows their status."
+msgstr ""
+
+#: includes/class-indexpages-admin.php:69
+#: includes/class-indexpages-admin.php:336
+#: includes/class-indexpages-tools-page.php:74
+#: includes/class-indexpages-tools-page.php:126
+msgid "Settings"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:70
+#: includes/class-indexpages-admin.php:379
+#: includes/class-indexpages-settings-page.php:70
+msgid "Queue and orders"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:153
+#: includes/class-indexpages-admin.php:162
+msgid "Index Pages:"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:155
+msgid "Open the queue and orders"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:156
+#: includes/class-indexpages-admin.php:174
+msgid "Dismiss"
+msgstr ""
+
+#. translators: %d: number of URLs.
+#: includes/class-indexpages-admin.php:166
+#, php-format
+msgid "%d URL was rejected and removed from the queue. The other URLs were sent."
+msgid_plural "%d URLs were rejected and removed from the queue. The other URLs were sent."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-indexpages-admin.php:173
+msgid "Fix the address (for example the site URL in Settings → General) and send the post again."
+msgstr ""
+
+#: includes/class-indexpages-admin.php:205
+#: includes/class-indexpages-posts-list.php:184
+#: includes/class-indexpages-settings-page.php:304
+#: includes/class-indexpages-settings-page.php:392
+#: includes/class-indexpages-tools-page.php:434
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/class-indexpages-admin.php:275
+#: includes/class-indexpages-tools-page.php:173
+msgid "Queued"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:276
+msgid "In a draft order"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:277
+msgid "Submitted"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:278
+msgid "Rejected"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:279
+msgid "Skipped"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:292
+msgid "Draft"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:293
+msgid "In progress"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:294
+#: includes/class-indexpages-tools-page.php:231
+msgid "Done"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:295
+msgid "Error"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:296
+msgid "Pending"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:336
+msgid "Add your API key to start sending URLs."
+msgstr ""
+
+#: includes/class-indexpages-admin.php:341
+#: includes/class-indexpages-settings-page.php:133
+msgid "Manual"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:342
+#: includes/class-indexpages-settings-page.php:137
+msgid "Draft orders"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:343
+#: includes/class-indexpages-settings-page.php:141
+msgid "Automatic"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:349
+#: includes/class-indexpages-settings-page.php:249
+msgid "Balance"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:353
+msgid "unavailable"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:356
+msgid "Queue"
+msgstr ""
+
+#: includes/class-indexpages-admin.php:357
+#: includes/class-indexpages-settings-page.php:126
+#: includes/class-indexpages-settings-page.php:129
+msgid "Mode"
+msgstr ""
+
+#. translators: 1: order id, 2: order status, 3: number of URLs, 4: date.
+#: includes/class-indexpages-admin.php:368
+#, php-format
+msgid "Last order: %1$s, %2$s, %3$d URL, %4$s."
+msgid_plural "Last order: %1$s, %2$s, %3$d URLs, %4$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-indexpages-admin.php:376
+msgid "No orders sent from this site yet."
+msgstr ""
+
+#: includes/class-indexpages-api.php:209
+#: includes/class-indexpages-sender.php:222
+msgid "The service sent a response that could not be read."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:29
+msgid "The post does not exist."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:56
+msgid "The site asks search engines not to index it (Settings → Reading)."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:59
+msgid "This post type is not enabled in the Index Pages settings."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:62
+msgid "This post type is not public."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:65
+msgid "Only published posts are sent."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:68
+msgid "The post is password protected."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:71
+msgid "Yoast SEO marks this post as noindex."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:74
+msgid "Rank Math marks this post as noindex."
+msgstr ""
+
+#: includes/class-indexpages-eligibility.php:78
+msgid "The post has no public http or https address."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:32
+msgid "Index Pages rejected the API key: it is unknown, revoked or expired."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:33
+msgid "Create a new key in the Index Pages dashboard under Settings → API keys and paste it on the plugin settings page. Automatic sending is paused until the key changes."
+msgstr ""
+
+#. translators: %s: API scope name, for example orders:run.
+#: includes/class-indexpages-errors.php:39
+#, php-format
+msgid "The API key lacks the \"%s\" permission."
+msgstr ""
+
+#. translators: %s: API scope name, for example orders:run.
+#: includes/class-indexpages-errors.php:39
+msgid "The API key lacks a permission this action needs."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:40
+msgid "Create a key with the permissions you need in the Index Pages dashboard, or switch the plugin to a mode that does not need it."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:44
+msgid "Your Index Pages account is frozen."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:45
+msgid "Contact support@index-pages.com."
+msgstr ""
+
+#. translators: 1: amount required, 2: balance, 3: currency code.
+#: includes/class-indexpages-errors.php:54
+#, php-format
+msgid "Not enough balance: the order costs %1$s %3$s, the balance is %2$s %3$s."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:55
+msgid "Not enough balance to run the order."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:56
+msgid "Top up the balance in the Index Pages dashboard. The order stays a free draft; run it from Tools → Index Pages when the balance allows."
+msgstr ""
+
+#. translators: %d: maximum number of draft orders.
+#: includes/class-indexpages-errors.php:63
+#, php-format
+msgid "The account already holds the maximum of %d draft orders, so no new one could be created."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:64
+msgid "The account already holds the maximum number of draft orders."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:65
+msgid "Run or delete some drafts in Tools → Index Pages or in the dashboard. The URLs stay in the queue and go out on the next run."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:69
+msgid "Too many requests to Index Pages in a short time."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:70
+msgid "Nothing to do: the plugin waits and tries again automatically."
+msgstr ""
+
+#. translators: %s: the service's explanation.
+#: includes/class-indexpages-errors.php:75
+#, php-format
+msgid "Index Pages did not accept the request: %s"
+msgstr ""
+
+#: includes/class-indexpages-errors.php:76
+msgid "Check the URLs listed in the activity log on Tools → Index Pages."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:80
+msgid "This order is not a draft any more, so it cannot be run again."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:81
+#: includes/class-indexpages-errors.php:86
+msgid "Refresh the list of orders."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:85
+msgid "Only draft orders can be deleted."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:90
+msgid "Index Pages does not know this order."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:91
+msgid "It may have been deleted in the dashboard. Refresh the list of orders."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:95
+msgid "The previous attempt is still being processed by Index Pages."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:96
+msgid "Nothing to do: the plugin checks again on the next run."
+msgstr ""
+
+#. translators: %s: error from the HTTP library.
+#: includes/class-indexpages-errors.php:101
+#, php-format
+msgid "Could not reach Index Pages: %s"
+msgstr ""
+
+#: includes/class-indexpages-errors.php:102
+msgid "This is usually temporary; the plugin tries again on the next run. If it keeps happening, ask your host whether outgoing HTTPS requests to api.index-pages.com are allowed."
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-indexpages-errors.php:109
+#, php-format
+msgid "Index Pages had an internal problem (HTTP %d)."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:110
+msgid "The plugin tries again on the next run. If it persists, contact support@index-pages.com."
+msgstr ""
+
+#. translators: 1: HTTP status code, 2: the service's explanation.
+#: includes/class-indexpages-errors.php:117
+#, php-format
+msgid "Index Pages answered with HTTP %1$d: %2$s"
+msgstr ""
+
+#. translators: %d: HTTP status code.
+#: includes/class-indexpages-errors.php:119
+#, php-format
+msgid "Index Pages answered with HTTP %d."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:120
+msgid "If this keeps happening, contact support@index-pages.com."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:153
+msgid "Not a valid URL."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:154
+msgid "Only http and https URLs are accepted."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:155
+msgid "The URL points to a private or internal address."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:156
+msgid "The URL is too long."
+msgstr ""
+
+#: includes/class-indexpages-errors.php:157
+msgid "The URL contains characters that are not allowed."
+msgstr ""
+
+#: includes/class-indexpages-plugin.php:51
+msgid "Every 15 minutes (Index Pages)"
+msgstr ""
+
+#: includes/class-indexpages-posts-list.php:93
+msgid "Not sent"
+msgstr ""
+
+#: includes/class-indexpages-posts-list.php:126
+#: includes/class-indexpages-posts-list.php:170
+msgid "Send to Index Pages"
+msgstr ""
+
+#: includes/class-indexpages-posts-list.php:210
+msgid "you are not allowed to send it"
+msgstr ""
+
+#. translators: %d: number of posts.
+#: includes/class-indexpages-posts-list.php:224
+#, php-format
+msgid "%d post queued."
+msgid_plural "%d posts queued."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of posts.
+#: includes/class-indexpages-posts-list.php:228
+#, php-format
+msgid "%d post skipped:"
+msgid_plural "%d posts skipped:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-indexpages-queue.php:99
+msgid "The queue is full. Send or clear it first."
+msgstr ""
+
+#. translators: 1: date the URL was last sent, 2: date it may be sent again.
+#: includes/class-indexpages-queue.php:135
+#, php-format
+msgid "Already sent on %1$s; it can be sent again after %2$s."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:37
+#: includes/class-indexpages-sender.php:517
+#: includes/class-indexpages-settings-page.php:412
+msgid "No API key is set."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:43
+msgid "Manual mode: nothing is sent automatically."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:46
+msgid "Paused: the API key was rejected. Enter a new key."
+msgstr ""
+
+#. translators: %d: seconds.
+#: includes/class-indexpages-sender.php:55
+#, php-format
+msgid "Rate limited by Index Pages; trying again in %d seconds."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:60
+msgid "Another run is in progress. Try again in a minute."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:87
+#: includes/class-indexpages-tools-page.php:165
+msgid "The queue is empty."
+msgstr ""
+
+#. translators: 1: daily cap in URLs, 2: number of queued URLs.
+#: includes/class-indexpages-sender.php:130
+#, php-format
+msgid "The daily spending cap of %1$d URLs is reached; %2$d queued URL waits until tomorrow."
+msgid_plural "The daily spending cap of %1$d URLs is reached; %2$d queued URLs wait until tomorrow."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-indexpages-sender.php:139
+msgid "Raise the daily cap in Settings → Index Pages if you want them sent today."
+msgstr ""
+
+#. translators: 1: balance, 2: currency, 3: price per URL.
+#: includes/class-indexpages-sender.php:149
+#, php-format
+msgid "Not enough balance to run an order: the balance is %1$s %2$s and one URL costs %3$s %2$s."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:154
+msgid "Top up the balance in the Index Pages dashboard. Queued URLs stay in the queue."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:187
+msgid "Nothing left to send: the queued posts are no longer eligible."
+msgstr ""
+
+#. translators: 1: number of URLs ready, 2: minimum URLs per order.
+#: includes/class-indexpages-sender.php:194
+#, php-format
+msgid "%1$d URLs are ready; an order needs at least %2$d. They wait for more."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:246
+msgid "Every URL in the batch was rejected. The reasons are in the activity log."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:247
+msgid "Check the rejected URLs on Tools → Index Pages."
+msgstr ""
+
+#: includes/class-indexpages-sender.php:251
+msgid "Some URLs were rejected; the rest stay in the queue for the next run."
+msgstr ""
+
+#. translators: 1: order id, 2: number of URLs.
+#: includes/class-indexpages-sender.php:268
+#, php-format
+msgid "Draft order %1$s was created with %2$d URL. A draft costs nothing until it is run."
+msgid_plural "Draft order %1$s was created with %2$d URLs. A draft costs nothing until it is run."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: order id.
+#: includes/class-indexpages-sender.php:283
+#, php-format
+msgid "Order %s was left as a draft because the mode is no longer Automatic."
+msgstr ""
+
+#. translators: 1: order id, 2: number of URLs, 3: amount charged, 4: currency.
+#: includes/class-indexpages-sender.php:309
+#, php-format
+msgid "Order %1$s with %2$d URL was run; %3$s %4$s was charged."
+msgid_plural "Order %1$s with %2$d URLs was run; %3$s %4$s was charged."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: URL, 2: reason.
+#: includes/class-indexpages-sender.php:411
+#, php-format
+msgid "%1$s was rejected: %2$s"
+msgstr ""
+
+#. translators: 1: order id, 2: number of URLs.
+#: includes/class-indexpages-sender.php:461
+#, php-format
+msgid "Draft order %1$s created with %2$d URL."
+msgid_plural "Draft order %1$s created with %2$d URLs."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: order id, 2: amount, 3: currency.
+#: includes/class-indexpages-sender.php:493
+#, php-format
+msgid "Order %1$s was run automatically; %2$s %3$s charged."
+msgstr ""
+
+#. translators: 1: order id, 2: amount, 3: currency.
+#: includes/class-indexpages-sender.php:542
+#, php-format
+msgid "Order %1$s was run from the Tools page; %2$s %3$s charged."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:69
+msgid "Index Pages is a paid service that speeds up the indexing of your URLs. Running an order charges your prepaid balance; draft orders are free."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:75
+msgid "This site asks search engines not to index it (Settings → Reading → Search engine visibility). Nothing is sent while that is on."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:79
+#: includes/class-indexpages-settings-page.php:88
+msgid "API key"
+msgstr ""
+
+#. translators: 1: masked key, 2: constant name.
+#: includes/class-indexpages-settings-page.php:95
+#, php-format
+msgid "The key %1$s is set by the %2$s constant in wp-config.php."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:104
+msgid "Saved key:"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:112
+msgid "Leave empty to keep the saved key. The key is never shown again."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:114
+msgid "Create a key in the Index Pages dashboard under Settings → API keys. A key without the \"orders:run\" permission can never spend money."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:119
+msgid "Remove the saved key"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:134
+msgid "Nothing is sent automatically and nothing is spent. Use \"Send to Index Pages\" in the posts list; that creates a free draft order, which you run yourself."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:138
+msgid "Newly published URLs are collected into draft orders. Drafts cost nothing; you run them in the Index Pages dashboard or under Tools → Index Pages, and only then is the balance charged."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:142
+msgid "Orders are created and run automatically, and every URL is charged to your balance at the current price, up to the daily cap below."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:160
+msgid "Daily spending cap"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:163
+msgid "URLs per day"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:166
+msgid "Automatic mode only. The plugin never runs more URLs than this in one day (site time zone); the rest wait in the queue until the next day."
+msgstr ""
+
+#. translators: 1: price per URL, 2: daily maximum spend.
+#: includes/class-indexpages-settings-page.php:172
+#, php-format
+msgid "At %1$s per URL that is at most %2$s a day."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:184
+#: includes/class-indexpages-settings-page.php:187
+msgid "Post types"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:195
+msgid "Password-protected posts and posts marked noindex in Yoast SEO or Rank Math are always skipped."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:200
+msgid "Updated posts"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:204
+msgid "Also send a URL again when an already published post is updated"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:207
+msgid "Minimum interval per URL:"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:209
+msgid "days"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:211
+msgid "A URL that went into an order is not queued again until this many days have passed, so editing a post does not pay for it twice. Applies to the posts list actions too."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:216
+msgid "Send the queue"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:223
+msgid "Each run turns the queue into one order. Uses WP-Cron, which runs when the site gets visits."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:250
+msgid "Price per URL"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:251
+msgid "Key"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:259
+msgid "Permissions"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:261
+msgid "Limits"
+msgstr ""
+
+#. translators: 1: minimum URLs, 2: maximum URLs, 3: maximum drafts.
+#: includes/class-indexpages-settings-page.php:266
+#, php-format
+msgid "%1$d–%2$d URLs per order, up to %3$d draft orders"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:280
+msgid "This key lacks \"orders:write\", so the plugin cannot create orders."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:283
+msgid "This key lacks \"orders:run\": in Automatic mode orders will be created but stay drafts."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:292
+msgid "Verify key and show balance"
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:316
+msgid "The API key was removed."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:321
+msgid "The API key was saved. Use \"Verify\" to check it."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:324
+msgid "That does not look like an Index Pages API key (it starts with \"ipk_live_\"). The key was not changed."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:356
+msgid "Automatic mode needs a daily spending cap between 1 and 100000 URLs. The mode was not changed."
+msgstr ""
+
+#: includes/class-indexpages-settings-page.php:364
+msgid "Settings saved."
+msgstr ""
+
+#. translators: 1: balance, 2: price per URL.
+#: includes/class-indexpages-settings-page.php:406
+#, php-format
+msgid "The key works. Balance: %1$s, price per URL: %2$s."
+msgstr ""
+
+#: includes/class-indexpages-settings.php:125
+msgid "Every 15 minutes"
+msgstr ""
+
+#: includes/class-indexpages-settings.php:126
+msgid "Hourly"
+msgstr ""
+
+#: includes/class-indexpages-settings.php:127
+msgid "Twice a day"
+msgstr ""
+
+#: includes/class-indexpages-settings.php:128
+msgid "Daily"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:74
+msgid "Add your API key first."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:124
+msgid "Send now"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:125
+msgid "Refresh"
+msgstr ""
+
+#. translators: 1: URLs run today, 2: daily cap.
+#: includes/class-indexpages-tools-page.php:134
+#, php-format
+msgid "Automatic mode: \"Send now\" creates an order from the queue and runs it, charging the balance. Run today: %1$d of %2$d URLs."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:140
+msgid "\"Send now\" creates a free draft order from the queue. Nothing is charged until you run the draft."
+msgstr ""
+
+#. translators: %d: number of URLs.
+#: includes/class-indexpages-tools-page.php:149
+#, php-format
+msgid "A batch of %d URLs is waiting to be confirmed by Index Pages after a failed attempt. The next run repeats the same request safely; it cannot create or charge twice."
+msgstr ""
+
+#. translators: %d: number of queued posts.
+#: includes/class-indexpages-tools-page.php:159
+#, php-format
+msgid "Queue (%d)"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:168
+msgid "Published"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:169
+msgid "Updated"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:170
+msgid "Added by hand"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:173
+msgid "Post"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:173
+#: includes/class-indexpages-tools-page.php:405
+msgid "URL"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:173
+msgid "Why"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:187
+msgid "Remove"
+msgstr ""
+
+#. translators: %d: number of queued posts not shown.
+#: includes/class-indexpages-tools-page.php:193
+#, php-format
+msgid "And %d more."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:196
+msgid "Clear the queue"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:196
+msgid "Remove every post from the queue?"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:210
+msgid "Recent orders"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:226
+msgid "No orders yet."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:231
+#: includes/class-indexpages-tools-page.php:320
+msgid "Order"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:231
+#: includes/class-indexpages-tools-page.php:405
+msgid "Status"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:231
+#: includes/class-indexpages-tools-page.php:322
+msgid "Cost"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:231
+msgid "Created"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:231
+msgid "Actions"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:251
+msgid "URL statuses"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:260
+msgid "Run…"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:261
+msgid "Delete draft"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:261
+msgid "Delete this draft order? It has not been paid for."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:275
+msgid "Activity"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:277
+msgid "Nothing yet."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:294
+#: includes/class-indexpages-tools-page.php:363
+msgid "← Back to the queue and orders"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:307
+msgid "Run this order?"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:309
+msgid "This order is not a draft, so it cannot be run again."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:321
+msgid "URLs"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:324
+#: includes/class-indexpages-tools-page.php:330
+msgid "Balance now"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:327
+msgid "Balance after the run"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:330
+msgid "unknown (the key cannot read the balance)"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:335
+msgid "The balance is too low for this order. Top it up in the Index Pages dashboard first."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:340
+msgid "Running the order charges its cost to your balance and starts the work. This cannot be undone."
+msgstr ""
+
+#. translators: %s: amount.
+#: includes/class-indexpages-tools-page.php:345
+#, php-format
+msgid "Run and pay %s"
+msgstr ""
+
+#. translators: 1: status, 2: done URLs, 3: total URLs, 4: cost.
+#: includes/class-indexpages-tools-page.php:387
+#, php-format
+msgid "Status: %1$s. Done: %2$d of %3$d. Cost: %4$s."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:402
+msgid "No per-URL details. They are kept until three days after the order's campaign ends; the counters above remain."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:422
+msgid "Next page"
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:494
+msgid "The queue was cleared."
+msgstr ""
+
+#: includes/class-indexpages-tools-page.php:508
+msgid "The request was incomplete. Try again."
+msgstr ""
+
+#. translators: 1: order id, 2: amount.
+#: includes/class-indexpages-tools-page.php:520
+#, php-format
+msgid "Order %1$s is running; %2$s was charged."
+msgstr ""
+
+#. translators: %s: order id.
+#: includes/class-indexpages-tools-page.php:548
+#, php-format
+msgid "Draft %s was deleted."
+msgstr ""
+
+#. translators: %s: link to the Index Pages privacy policy.
+#: includes/class-indexpages-plugin.php
+msgid "This site submits the public addresses (URLs) of its published pages to Index Pages, a service that asks search engines to crawl them. No personal data of visitors or users is sent. See the %s."
+msgstr ""
+
+#: includes/class-indexpages-plugin.php
+msgid "Index Pages privacy policy"
+msgstr ""

@@ -1,0 +1,107 @@
+/* Index Pages admin screens. */
+.indexpages-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin: 12px 0;
+}
+
+.indexpages-inline-form {
+	display: inline-block;
+	margin: 0;
+}
+
+.indexpages-account {
+	max-width: 640px;
+	margin: 8px 0 12px;
+}
+
+.indexpages-account th {
+	width: 180px;
+	font-weight: 600;
+}
+
+.indexpages-mode {
+	margin: 0 0 12px;
+}
+
+.indexpages-mode .description {
+	display: block;
+	margin-left: 24px;
+	max-width: 640px;
+}
+
+.indexpages-block {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.indexpages-muted {
+	color: #646970;
+}
+
+.indexpages-nowrap {
+	white-space: nowrap;
+}
+
+.indexpages-list {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+.indexpages-danger.button-link {
+	color: #b32d2e;
+}
+
+.indexpages-status {
+	display: inline-block;
+	padding: 0 6px;
+	border-radius: 2px;
+	background: #f0f0f1;
+	line-height: 20px;
+}
+
+.indexpages-status-submitted,
+.indexpages-status-done,
+.indexpages-status-in_progress {
+	background: #edfaef;
+	color: #00450c;
+}
+
+.indexpages-status-draft,
+.indexpages-status-queued {
+	background: #fcf9e8;
+	color: #614a19;
+}
+
+.indexpages-status-rejected,
+.indexpages-status-error {
+	background: #fcf0f1;
+	color: #8a2424;
+}
+
+.indexpages-stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 0 0 8px;
+}
+
+.indexpages-stats li {
+	margin: 0;
+}
+
+.indexpages-stats span {
+	display: block;
+	color: #646970;
+}
+
+.indexpages-stats strong {
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+.column-indexpages {
+	width: 12em;
+}
