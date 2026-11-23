@@ -221,7 +221,7 @@ class IndexPages_Posts_List {
 		$parts = array();
 		if ( $queued > 0 ) {
 			/* translators: %d: number of posts. */
-			$parts[] = sprintf( _n( '%d post queued.', '%d posts queued.', $queued, 'indexpages' ), $queued );
+			$parts[] = sprintf( _n( '%d post added to the queue.', '%d posts added to the queue.', $queued, 'indexpages' ), $queued );
 		}
 		if ( $skipped ) {
 			/* translators: %d: number of posts. */

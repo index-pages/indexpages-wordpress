@@ -3,7 +3,7 @@
  * Plugin Name:       Index Pages URL Indexing
  * Plugin URI:        https://index-pages.com/api/
  * Description:       Sends the URLs of your published posts and pages to Index Pages, a paid URL indexing service, and shows their status.
- * Version:           0.1.0
+ * Version:           0.1.1
  * Requires at least: 6.4
  * Requires PHP:      7.4
  * Author:            Index Pages
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'INDEXPAGES_VERSION', '0.1.0' );
+define( 'INDEXPAGES_VERSION', '0.1.1' );
 define( 'INDEXPAGES_PLUGIN_FILE', __FILE__ );
 define( 'INDEXPAGES_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'INDEXPAGES_PLUGIN_URL', plugin_dir_url( __FILE__ ) );

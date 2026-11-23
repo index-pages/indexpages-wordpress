@@ -305,17 +305,16 @@ class IndexPages_Sender {
 		return self::result(
 			'ok',
 			sprintf(
-				/* translators: 1: order id, 2: number of URLs, 3: amount charged, 4: currency. */
+				/* translators: 1: order id, 2: number of URLs, 3: amount charged, for example $3.00. */
 				_n(
-					'Order %1$s with %2$d URL was run; %3$s %4$s was charged.',
-					'Order %1$s with %2$d URLs was run; %3$s %4$s was charged.',
+					'Order %1$s with %2$d URL was run; %3$s was charged.',
+					'Order %1$s with %2$d URLs was run; %3$s was charged.',
 					$count,
 					'indexpages'
 				),
 				$batch['order'],
 				$count,
-				isset( $run['cost'] ) ? $run['cost'] : '?',
-				isset( $run['currency'] ) ? $run['currency'] : 'USD'
+				self::charged( $run )
 			)
 		);
 	}
@@ -489,8 +488,8 @@ class IndexPages_Sender {
 		self::remember_order( $order );
 		IndexPages_State::log(
 			'order_run',
-			/* translators: 1: order id, 2: amount, 3: currency. */
-			sprintf( __( 'Order %1$s was run automatically; %2$s %3$s charged.', 'indexpages' ), $batch['order'], isset( $order['cost'] ) ? $order['cost'] : '?', isset( $order['currency'] ) ? $order['currency'] : 'USD' ),
+			/* translators: 1: order id, 2: amount charged, for example $3.00. */
+			sprintf( __( 'Order %1$s was run automatically; %2$s charged.', 'indexpages' ), $batch['order'], self::charged( $order ) ),
 			array( 'order' => $batch['order'] )
 		);
 
@@ -538,14 +537,27 @@ class IndexPages_Sender {
 		self::remember_order( $order );
 		IndexPages_State::log(
 			'order_run',
-			/* translators: 1: order id, 2: amount, 3: currency. */
-			sprintf( __( 'Order %1$s was run from the Tools page; %2$s %3$s charged.', 'indexpages' ), $order_id, isset( $order['cost'] ) ? $order['cost'] : '?', isset( $order['currency'] ) ? $order['currency'] : 'USD' ),
+			/* translators: 1: order id, 2: amount charged, for example $3.00. */
+			sprintf( __( 'Order %1$s was run from the Tools page; %2$s charged.', 'indexpages' ), $order_id, self::charged( $order ) ),
 			array( 'order' => $order_id )
 		);
 
 		/** This action is documented in includes/class-indexpages-sender.php */
 		do_action( 'indexpages_order_run', $order );
 		return $order;
+	}
+
+	/**
+	 * The amount an order cost, formatted like everywhere else in the admin.
+	 *
+	 * @param array $order Order.
+	 * @return string
+	 */
+	private static function charged( array $order ) {
+		if ( ! isset( $order['cost'] ) ) {
+			return '?';
+		}
+		return IndexPages_Admin::money( (string) $order['cost'], isset( $order['currency'] ) ? (string) $order['currency'] : 'USD' );
 	}
 
 	/**

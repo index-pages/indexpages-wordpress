@@ -105,3 +105,9 @@
 .column-indexpages {
 	width: 12em;
 }
+
+.indexpages td code {
+	overflow-wrap: anywhere;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}

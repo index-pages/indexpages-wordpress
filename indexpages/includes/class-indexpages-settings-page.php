@@ -61,7 +61,10 @@ class IndexPages_Settings_Page {
 			return;
 		}
 		$settings = IndexPages_Settings::all();
-		$account  = IndexPages_Admin::account( false );
+		$account  = IndexPages_Admin::account();
+		if ( is_wp_error( $account ) ) {
+			$account = null;
+		}
 		?>
 		<div class="wrap indexpages">
 			<h1><?php esc_html_e( 'Index Pages', 'indexpages' ); ?></h1>
@@ -76,7 +79,7 @@ class IndexPages_Settings_Page {
 				</p></div>
 			<?php endif; ?>
 
-			<h2><?php esc_html_e( 'API key', 'indexpages' ); ?></h2>
+			<h2><?php esc_html_e( 'Account', 'indexpages' ); ?></h2>
 			<?php self::render_account( $account ); ?>
 
 			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">

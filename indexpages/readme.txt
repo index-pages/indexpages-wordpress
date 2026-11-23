@@ -4,7 +4,7 @@ Tags: indexing, seo, search engines, url submission
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,10 +106,18 @@ Write to support@index-pages.com.
 
 == Changelog ==
 
+= 0.1.1 =
+* The settings page shows the balance right away, without pressing Verify first.
+* Amounts in the activity log are written the same way as everywhere else.
+* Clearer wording after "Send to Index Pages" and tidier wrapping of long URLs.
+
 = 0.1.0 =
 * First release: API key settings with verification, Manual / Draft orders / Automatic modes, daily spending cap, update interval, queue sent by WP-Cron with idempotency keys, posts list column and actions, Tools page with orders and per-URL statuses, dashboard widget, noindex detection for Yoast SEO and Rank Math.
 
 == Upgrade Notice ==
+
+= 0.1.1 =
+Small fixes to the settings page and the activity log.
 
 = 0.1.0 =
 First release.
